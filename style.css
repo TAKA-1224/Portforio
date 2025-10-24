@@ -589,17 +589,6 @@ footer .right {
   セクション共通レイアウト調整
 ================================ */
 
-/* セクション全体の左右マージン統一 */
-.wrapper,
-#about,
-#work,
-#contact {
-  width: 100%;
-  max-width: 1100px; /* ページ全体の横幅統一 */
-  margin: 0 auto;
-  padding: 0 60px; /* 左右に統一余白 */
-  box-sizing: border-box;
-}
 
 /* タイトルブロック（textクラス）の左位置を統一 */
 .text {
