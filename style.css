@@ -503,7 +503,7 @@ footer .right {
   text-align: right;
 }
 
-@media and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .wrapper {
     padding: 0 40px;
   }
@@ -523,7 +523,7 @@ footer .right {
   }
 }
 
-@media and (max-width: 768px) {
+@media (max-width: 768px) {
 
   #navi ul {
     flex-wrap: wrap;
@@ -609,7 +609,7 @@ footer .right {
 }
 
 /* --- タブレット以下 --- */
-@media and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .wrapper,
   #about,
   #work,
@@ -619,7 +619,7 @@ footer .right {
 }
 
 /* --- スマホ --- */
-@media and (max-width: 768px) {
+@media (max-width: 768px) {
   .wrapper,
   #about,
   #work,
