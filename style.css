@@ -504,12 +504,342 @@ footer .right {
 }
 
 /*-----RESPONSIVE-----*/
-@media screen and(max-width: 960px){
-  header {
-    
+@media screen and (max-width: 768px) {
+
+  /* --- 共通 --- */
+  body {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  /* --- MAIN VISUAL --- */
+  .mainvisual {
+    height: 80vh;
+  }
+
+  .mainvisual img {
+    object-position: center;
+  }
+
+  .mainvisual .title {
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+    .mainvisual p {
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: -5px;
+    }
+
+    .mainvisual .name {
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    margin-top: -5px;
+  }
+
+  /* --- ABOUT --- */
+  #about {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 40px 20px;
+  }
+
+  .profile-img {
+    width: 80%;
+    max-width: 320px;
+  }
+
+  .about-profile {
+    padding: 0;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+
+  .about-profile p {
+    margin-bottom: 12px;
+  }
+
+  /* --- SNS LINKS --- */
+  .sns-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 20px;
+    margin-top: 30px;
+  }
+
+  .sns-links .left,
+  .sns-links .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sns-links a.btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+
+  /* --- WORK --- */
+  .product {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    justify-items: center;
+  }
+
+  .work-img {
+    width: 90%;
+  }
+
+  .description-text {
+    text-align: center;
+  }
+
+  .thanks {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  /* --- ENTRY --- */
+  .entry-section {
+    margin: 20px;
+    padding: 40px 10px;
+  }
+
+  .entry-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .entry-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .entry-links a {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
   }
 }
 
+/* ================================
+  タブレット対応（769px〜1024px）
+================================ */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  body {
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    padding: 0 40px;
+  }
+
+  /* --- MAIN VISUAL --- */
+  .mainvisual {
+    height: 80vh;
+  }
+
+  .mainvisual .title {
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+  }
+
+  .mainvisual p {
+    top: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  .mainvisual .name {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.8rem;
+  }
+
+  /* --- ABOUT --- */
+  #about {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 0;
+  }
+
+  .profile-img {
+    width: 40%;
+    max-width: 350px;
+  }
+
+  .about-profile p {
+    margin-bottom: 12px;
+  }
+
+  .sns-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .sns-links .left,
+  .sns-links .right {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .sns-links a.btn {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+
+  /* --- WORK --- */
+  .product {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-items: center;
+  }
+
+  .work-img {
+    width: 90%;
+  }
+
+  .description-text h3 {
+    font-size: 1.1rem;
+  }
+
+  /* --- ENTRY --- */
+  .entry-section {
+    margin: 30px;
+    padding: 60px 40px;
+  }
+
+  .entry-section h1 {
+    font-size: 2rem;
+  }
+
+  .entry-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+
+  .entry-links a {
+    font-size: 1.3rem;
+    margin: 12px 0;
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    padding: 30px 40px;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  footer .right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+}
+
+/* ================================
+  セクション共通レイアウト調整
+================================ */
+
+/* セクション全体の左右マージン統一 */
+.wrapper,
+#about,
+#work,
+#contact {
+  width: 100%;
+  max-width: 1100px; /* ページ全体の横幅統一 */
+  margin: 0 auto;
+  padding: 0 60px; /* 左右に統一余白 */
+  box-sizing: border-box;
+}
+
+/* タイトルブロック（textクラス）の左位置を統一 */
+.text {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* section-titleを左寄せで統一 */
+.section-title {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.text p {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+/* --- タブレット以下 --- */
+@media screen and (max-width: 1024px) {
+  .wrapper,
+  #about,
+  #work,
+  #contact {
+    padding: 0 40px;
+  }
+}
+
+/* --- スマホ --- */
+@media screen and (max-width: 768px) {
+  .wrapper,
+  #about,
+  #work,
+  #contact {
+    padding: 0 20px;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .text p {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+}
 
 
 
