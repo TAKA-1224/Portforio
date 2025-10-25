@@ -21,11 +21,12 @@ li {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   vertical-align: bottom;
 }
 
 .wrapper {
+  width: 100%;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -503,7 +504,12 @@ footer .right {
   text-align: right;
 }
 
-@media (max-width: 1024px) {
+
+
+
+
+/*-----RESPONSIVE-----*/
+@media screen and (max-width: 1024px) {
   .wrapper {
     padding: 0 40px;
   }
@@ -511,7 +517,6 @@ footer .right {
   .product {
     grid-template-columns: repeat(2, 1fr);
   }
-
 
   .mainvisual .title {
     font-size: 26px;
@@ -521,16 +526,18 @@ footer .right {
   .mainvisual .name {
     font-size: 42px;
   }
-}
-
-@media (max-width: 768px) {
 
   #navi ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    padding-top: 10px;
-  }
+  padding-right: 10px;
+}
+
+#navi li {
+  margin-left: 10px;
+}
+}
+
+@media screen and (max-width: 768px) {
+
 
   .mainvisual {
     height: 80vh;
@@ -540,17 +547,23 @@ footer .right {
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 20px;
+    font-size: 18px;
+    display: block;
+    white-space: nowrap;
   }
 
   .mainvisual p {
     top: 45%;
     font-size: 18px;
+    display: block;
+    white-space: nowrap;
   }
 
   .mainvisual .name {
-    top: 52%;
-    font-size: 36px;
+    top: 54%;
+    font-size: 28px;
+    display: block;
+    white-space: nowrap;
   }
 
   #about {
@@ -565,9 +578,20 @@ footer .right {
   }
 
   .sns-links {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .right {
+    padding-left: 90px;
+  }
+
+  .thanks { 
+    flex-direction: column; 
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 10px 0;
   }
 
   .product {
@@ -583,12 +607,12 @@ footer .right {
     text-align: center;
     gap: 20px;
   }
+
+  footer .right {
+    padding: 0;
+    margin-bottom: 20px;
+  }
 }
-
-/* ================================
-  セクション共通レイアウト調整
-================================ */
-
 
 /* タイトルブロック（textクラス）の左位置を統一 */
 .text {
@@ -608,8 +632,9 @@ footer .right {
   margin-bottom: 50px;
 }
 
+
 /* --- タブレット以下 --- */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .wrapper,
   #about,
   #work,
@@ -618,8 +643,9 @@ footer .right {
   }
 }
 
+
 /* --- スマホ --- */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .wrapper,
   #about,
   #work,
@@ -640,6 +666,8 @@ footer .right {
     margin-bottom: 40px;
   }
 }
+
+
 
 
 
