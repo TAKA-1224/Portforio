@@ -612,64 +612,38 @@ footer .right {
     padding: 0;
     margin-bottom: 20px;
   }
-}
 
-/* タイトルブロック（textクラス）の左位置を統一 */
-.text {
-  text-align: left;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-/* section-titleを左寄せで統一 */
-.section-title {
-  text-align: left;
-  margin-bottom: 8px;
-}
-
-.text p {
-  text-align: left;
-  margin-bottom: 50px;
-}
-
-
-/* --- タブレット以下 --- */
-@media screen and (max-width: 1024px) {
-  .wrapper,
-  #about,
-  #work,
-  #contact {
-    padding: 0 40px;
-  }
-}
-
-
-/* --- スマホ --- */
-@media screen and (max-width: 768px) {
-  .wrapper,
-  #about,
-  #work,
-  #contact {
-    padding: 0 20px;
+    .profile-container {
+    flex-direction: column; /* 横並び → 縦並び */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    gap: 10px;
   }
 
-  .text {
-    text-align: left;
+  .profile-detail-img {
+    flex: none;
+    width: 60%;
+    max-width: 220px;
   }
 
-  .section-title {
-    font-size: 1.6rem;
+  .profile-name {
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 10px;
   }
 
-  .text p {
+  .about-profile {
+    padding: 0;
     font-size: 0.9rem;
-    margin-bottom: 40px;
+    line-height: 1.8;
+  }
+
+  .profile-btn {
+    text-align: center;
+    margin-top: 20px;
   }
 }
-
-
-
-
 
 
 
